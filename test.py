@@ -9,7 +9,7 @@ from streamlit_folium import folium_static
 geolocator = Nominatim(user_agent="my_geocoder")
 
 # Create a Streamlit app
-st.title("Welcome Mansour Maps")
+st.title("Welcome to Mansour Maps")
 
 # Ask user for input address
 address = st.text_input("Enter an address to geocode:")
