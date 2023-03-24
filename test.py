@@ -1,6 +1,5 @@
 # Initialize Nominatim geocoder
 import geopandas as gpd
-import pandas as pd
 import streamlit as st
 from geopy.geocoders import Nominatim
 import folium
@@ -10,7 +9,7 @@ from streamlit_folium import folium_static
 geolocator = Nominatim(user_agent="my_geocoder")
 
 # Create a Streamlit app
-st.title("Geocoding App")
+st.title("Welcome Mansour Maps")
 
 # Ask user for input address
 address = st.text_input("Enter an address to geocode:")
