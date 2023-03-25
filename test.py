@@ -40,6 +40,8 @@ if location:
     map = folium.Map(location=[location.latitude, location.longitude], zoom_start=12)
 
     length = st.text_input("Enter the distance of buffer in meters:")
+    st.write("TO make buffer press the button")
+
     st.write("The defult value of buffer is 5000 m")
     bu=st.button("Make buffer")
     if bu:
