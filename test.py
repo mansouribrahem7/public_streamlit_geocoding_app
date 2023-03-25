@@ -20,12 +20,6 @@ flag=True
 # Display the results
 if location:
     flag =False
-    st.write("Latitude:", location.latitude)
-    
-    st.write("Longitude:", location.longitude)
-
-
-
 
     # create a Pandas DataFrame that contains the address I wish to geocode:
     home = gpd.GeoDataFrame([{'address': address}])
@@ -39,7 +33,7 @@ if location:
     # Create a folium map centered at the geocoded location
     map = folium.Map(location=[location.latitude, location.longitude], zoom_start=12)
 
-    length = st.text_input("Enter the distance of buffer in meters:")
+    length = st.text_input("If you want to make buffer please enter the distance of buffer in meters:")
     st.write("TO make buffer press the button")
 
     st.write("The defult value of buffer is 5000 m")
@@ -72,7 +66,3 @@ else:
     if address :
         st.write("Location not found.")
     
-
-
-
-
